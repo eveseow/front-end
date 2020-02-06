@@ -1,0 +1,26 @@
+.container{
+	height: 100%;
+}
+
+#add-word {
+    width: 60%;
+	display: block;
+	margin: 0 auto;
+}
+
+#btnAdd {
+	display: block;
+	margin: 0 auto;
+    background-color: #fff;
+    color: #1890ff
+}
+
+
+.fixedbutton {
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    width: 50px;
+    height: 50px;
+    z-index: 100;
+}

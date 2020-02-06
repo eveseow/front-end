@@ -1,0 +1,38 @@
+<div
+    style="position: fixed; width: 100%; height: 100%; background-image: url('/assets/login-cover.jpg'); background-repeat: no-repeat; background-size: cover;">
+    <nz-card style="width: 70%; height: 70%; position: absolute; margin: 4% 9%" class="managesession-form">
+        <br />
+        <p style=" text-align: center; font-size: 30px">Manage your sessions here</p>
+        <p style=" text-align: center; font-size: 15px">Change the status of the status to keep them active or inactive
+        </p>
+        <br />
+        <nz-table nzShowPagination="false"
+            style="height: auto; width: 80%; display: block; margin: 2% auto; background-color: #fff;" #basicTable
+            [nzData]="sessionList" [nzPageSize]="50" [nzScroll]="{ y: '350px' }">
+            <thead>
+                <tr>
+                    <th nzWidth="200px">Timestamp</th>
+                    <th nzWidth="100px">Session ID</th>
+                    <th nzWidth="150px">Event Name</th>
+                    <th nzWidth="150px">Event Key</th>
+                    <th nzWidth="200px">Event Description</th>
+                    <th nzWidth="150px">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i = index; let data of sessionList | reverse; ">
+                    <td class="numberID">{{ data.createdAt }}</td>
+                    <td>{{ data.session_id }}</td>
+                    <td>{{ data.session_name }}</td>
+                    <td class="numberID">{{ data.session_key }}</td>
+                    <td>{{ data.session_description }}</td>
+                    <td>
+                        <nz-switch [(ngModel)]="status[i]" nzCheckedChildren="Active" nzUnCheckedChildren="Inactive"
+                            (click)="clickSwitch(i)"></nz-switch>
+                    </td>
+                </tr>
+            </tbody>
+        </nz-table>
+        <br/>
+    </nz-card>
+</div>

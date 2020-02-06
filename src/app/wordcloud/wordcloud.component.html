@@ -1,0 +1,36 @@
+<div id="chartdivPOS" style="float: left; width: 48%; height: 450px; border: 1px solid #ECECEC"></div>
+<div id="chartdivNEG" style="float: left; width: 48%; height: 450px; margin-left: 25px; border: 1px solid #ECECEC">
+</div>
+
+<br />
+
+<div style="float: left; background: #ECECEC; padding: 30px; width: 100%">
+    <nz-row [nzGutter]="10">
+        <nz-card style="float: left; width: 48%">
+            <nz-col [nzSpan]="10">
+                <nz-statistic [nzValue]="POSpercent | number: '1.0-2'" [nzTitle]="'Percentage'" [nzSuffix]="'%'"
+                    [nzValueStyle]="{ color: '#3F8600' }">
+                </nz-statistic>
+            </nz-col>
+            <nz-col [nzSpan]="12">
+                <nz-statistic [nzValue]="POSvalue" [nzTitle]="'Positive Sentiment'" [nzPrefix]="prefixTplOne"
+                    [nzValueStyle]="{ color: '#3F8600' }">
+                </nz-statistic>
+                <ng-template #prefixTplOne><i nz-icon nzType="like"></i></ng-template>
+            </nz-col>
+        </nz-card>
+        <nz-card style="float: left; margin-left: 25px; width: 48%">
+            <nz-col [nzSpan]="10">
+                <nz-statistic [nzValue]="NEGpercent | number: '1.0-2'" [nzTitle]="'Percentage'" [nzSuffix]="'%'"
+                    [nzValueStyle]="{ color: '#CF1322' }">
+                </nz-statistic>
+            </nz-col>
+            <nz-col [nzSpan]="12">
+                <nz-statistic [nzValue]="NEGvalue" [nzTitle]="'Negative Sentiment'" [nzPrefix]="prefixTplTwo"
+                    [nzValueStyle]="{ color: '#CF1322' }">
+                </nz-statistic>
+                <ng-template #prefixTplTwo><i nz-icon nzType="dislike"></i></ng-template>
+            </nz-col>
+        </nz-card>
+    </nz-row>
+</div>

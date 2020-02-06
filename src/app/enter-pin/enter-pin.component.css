@@ -1,0 +1,12 @@
+.enterpin-form {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+#btnGo, #btnLogin {
+    display: block;
+	margin: 0 auto;
+    background-color: #fff;
+    color: #1890ff;
+    width: 100%
+}

@@ -1,0 +1,19 @@
+.createsession-form {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.createsession-form-button {
+    width: 100%;
+}
+
+.fullwidth {
+    width: 100%
+}
+
+#btnGenerate {
+    display: block;
+	margin: 0 auto;
+    background-color: #fff;
+    color: #1890ff
+}

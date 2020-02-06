@@ -1,0 +1,11 @@
+<nz-modal [(nzVisible)]="isVisible" nzTitle="Comments" nzCancelText="Exit" (nzOnCancel)="handleCancel()" (nzOnOk)="onAdd()">
+    <div class="container">
+        <br />
+        <textarea id="add-word" nz-input placeholder="Type here" [(ngModel)]="term" nzAutosize></textarea>
+        <br />
+    </div>
+</nz-modal>
+
+<button class="fixedbutton" nz-button nzType="primary" [nzSize]="'large'" nzShape="circle" (click)="showModal()">
+    <i nz-icon nzType="plus"></i>
+</button>

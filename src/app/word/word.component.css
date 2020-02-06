@@ -1,0 +1,14 @@
+.intro {
+    font-family: 'Raleway', sans-serif;
+    /* padding-bottom: 1em; */
+}
+
+.container {
+    height: 100%;
+}
+
+.fixedbutton {
+    position: fixed;
+    right: 5%;
+    bottom: 5%
+}

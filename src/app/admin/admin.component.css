@@ -1,0 +1,38 @@
+h3 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.welcome {
+  text-align: center;
+  background-color: #00142a;
+  padding: 2% 0;
+  margin: 0;
+  color: #fff;
+}
+
+.layout {
+  height: 100vh;
+}
+
+.logo {
+  height: 32px;
+  margin: 28px;
+}
+
+nz-sider {
+  background-color: #fff;
+}
+
+nz-content {
+  position: relative;
+  height: 100vh;
+}
+
+.inner-content {
+  background: #fff;
+  min-height: 360px;
+}
+
+nz-footer {
+  text-align: center;
+}

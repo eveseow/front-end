@@ -1,0 +1,16 @@
+.register-form {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.register-button {
+    width: 100%;
+}
+
+#btnLogin {
+    display: block;
+	margin: 0 auto;
+    background-color: #fff;
+    color: #1890ff;
+    width: 100%
+}

@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  termURL: "http://localhost:3000/api/word/",
+  sessURL: "http://localhost:3000/api/session/",
+  userURL: "http://localhost:3000/api/user/"
 };
 
 /*

@@ -1,0 +1,21 @@
+<div class="enterpin-form"
+  style="position: fixed; width: 100%; height: 100vh; background-image: url('/assets/login-cover.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+  <nz-card style="width: 300px; display: block; margin: 90px auto;">
+        <img src="/assets/newlogo.png" style="display: block; margin: 0 auto;" />
+        <hr />
+
+        <h3 nz-title style="text-align: center; padding-top: 1em">Enter your PIN here: </h3>
+        <br />
+        <input type="number" nz-input placeholder="PIN" style="text-align: center" [(ngModel)]="enterPIN" />
+        <br />
+        <br />
+        <button nz-button nzType="primary" id="btnGo" type="button" class="btn btn-success" (click)="enter()">Enter
+            Room</button>
+        <br />
+        <br />
+        Or <a routerLink="/login">Login as an Admin</a>
+        <br />
+        <br />
+    </nz-card>
+</div>

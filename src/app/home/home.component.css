@@ -1,0 +1,56 @@
+  h3, h4 nz-sider {
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .welcome {
+    /* position: fixed; */
+    text-align: center;
+    background-color: #00142a;
+    padding-top: 2%;
+    margin: 0;
+    color: #fff;
+    z-index: 2; 
+  } 
+
+  .question {
+    text-align: center;
+    background-color: #1890ff;
+    padding: 2% 0;
+    margin: 0;
+    color: #fff;
+  }
+
+  .desc {
+    text-align: center;
+    background-color: #1890ff;
+    padding-top: 1.5%;
+    margin: 0;
+    color: #fff;
+  }
+
+  .layout {
+    height: 100vh;
+  }
+  
+  .logo {
+    height: 32px;
+    margin: 28px;
+  }
+  
+  nz-sider {
+    background-color: #fff;
+  }
+  
+  nz-content {
+    position: relative;
+    height: 100vh;
+  }
+  
+  .inner-content {
+    background: #fff;
+    min-height: 100%;
+  }
+  
+  nz-footer {
+    text-align: center;
+  }

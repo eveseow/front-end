@@ -1,0 +1,20 @@
+.login-form {
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+.login-form-forgot {
+    float: right;
+}
+
+.login-form-button {
+    width: 100%;
+}
+
+#btnBck {
+    display: block;
+	  margin: 0 auto;
+    background-color: #fff;
+    color: #1890ff;
+    width: 100%
+}
